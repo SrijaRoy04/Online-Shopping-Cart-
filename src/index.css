@@ -1,0 +1,21 @@
+@import "../style.css";
+
+.address-summary { min-height: 190px; }
+.address-summary h3 { margin: 0; font-family: var(--display); font-size: 21px; }
+.address-summary > p { margin-top: 7px !important; line-height: 1.65; }
+.coupon-applied { margin: 7px 0 0; color: #22815f; font-size: 9px; }
+.coupon-remove { margin-top: 5px; padding: 0; border: 0; border-bottom: 1px solid var(--coral); color: var(--muted); background: transparent; font-size: 9px; cursor: pointer; }
+.toast.success { border-left: 3px solid #83c7a2; }
+.toast.error { border-left: 3px solid var(--coral); }
+.toast.error i { color: #ffad99; }
+.review-label { display: flex; align-items: center; gap: 5px; }
+.catalog { min-width: 0; }
+.product-card { animation: rise-in .4s ease both; animation-delay: calc(var(--card-order, 0) * 35ms); }
+.payment-card .checkout-actions { margin-top: 16px; }
+.payment-card .checkout-mini-summary .bill-total { margin-top: 10px; }
+.checkout-page-heading .back-to-shop { padding: 0; border: 0; background: transparent; cursor: pointer; }
+
+@media (max-width: 760px) {
+  .checkout-columns > .address-summary { order: -1; }
+  .shop-section { padding-top: 45px; }
+}
